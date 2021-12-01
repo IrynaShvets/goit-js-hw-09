@@ -1,0 +1,33 @@
+label {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+input:hover,
+input:focus {
+  border-color: #2196f3;
+}
+
+button {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #2196f3;
+  color: #000000;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  background-color: #c4c4c4;
+}

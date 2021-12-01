@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"TCaP":[function(require,module,exports) {
 "use strict";function t(){return`#${Math.floor(16777215*Math.random()).toString(16)}`}require("../css/01-style.css");let e=document.body;const i=1e3,s=document.querySelector("button[data-start]"),r=document.querySelector("button[data-stop]"),d={promptCounter:0,intervalId:null,isActive:!1,start(){if(this.isActive)return;r.hasAttribute("disabled")&&r.removeAttribute("disabled"),s.setAttribute("disabled","disabled"),this.isActive=!0,this.intervalId=setInterval(()=>{e.style.background=t(),this.promptCounter+=1},1e3)},stop(){if(this.isActive)return clearInterval(this.intervalId),r.setAttribute("disabled","disabled"),s.removeAttribute("disabled"),void(this.isActive=!1)}};s.addEventListener("click",()=>{d.start()}),r.addEventListener("click",()=>{d.stop()});
 },{"../css/01-style.css":"FmvK"}]},{},["TCaP"], null)
-//# sourceMappingURL=/01-color-switcher.4ae1b8f7.js.map
+//# sourceMappingURL=/goit-js-hw-09/01-color-switcher.4ae1b8f7.js.map
